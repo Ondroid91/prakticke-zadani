@@ -4,10 +4,12 @@ C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakt
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\bin\Debug\net10.0-windows\prakticke zadani.dll
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\bin\Debug\net10.0-windows\prakticke zadani.pdb
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\New_car.g.cs
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\App.g.cs
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\prakticke zadani_MarkupCompile.cache
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\prakticke zadani_MarkupCompile.lref
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\New_car.baml
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\prakticke zadani.g.resources
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\prakticke zadani.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\prakticke zadani.AssemblyInfoInputs.cache

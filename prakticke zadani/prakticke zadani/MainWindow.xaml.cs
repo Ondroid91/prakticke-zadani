@@ -58,7 +58,13 @@ namespace prakticke_zadani
 
         private void AddCar_btn_Click(object sender, RoutedEventArgs e)
         {
+            Car new_car = new Car();
+            new_car.Model = "Auto";
+            new_car.Date = new DateOnly(2026, 9, 18);
+            new_car.Price = 100000;
+            new_car.Dph = 10;
 
+            _CarService.AddCar(cars, new_car);
         }
 
 

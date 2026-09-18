@@ -11,8 +11,5 @@ namespace prakticke_zadani.Interfaces
 
         List<CarSummary> GetCarSummary(List<Car> cars);
         void AddCar(List<Car> cars, Car car);
-
-        void EditCar(List<Car> cars, int index, Car car);
-
     }
 }

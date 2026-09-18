@@ -67,7 +67,7 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <TextBlock Name="filepath" HorizontalAlignment="Center" Margin="0,344,0,0" TextWrapping="Wrap" Text="path : " VerticalAlignment="Top" Width="400"/>
+        <TextBlock Name="filepath" HorizontalAlignment="Center" Margin="0,344,0,0" TextWrapping="Wrap" Text="Načtený soubor : " VerticalAlignment="Top" Width="400"/>
         <Button Name="Unload_btn" Content="Smazat" HorizontalAlignment="Left" Margin="260,374,0,0" VerticalAlignment="Top" Click="Unload_btn_Click"/>
         <Button Name="Load_btn" Content="Načíst soubor" HorizontalAlignment="Left" Margin="323,374,0,0" VerticalAlignment="Top" Click="Load_btn_Click"/>
         <Button Name="AddCar_btn" Content="Přidat auto" HorizontalAlignment="Left" Margin="488,374,0,0" VerticalAlignment="Top" Click="AddCar_btn_Click"/>

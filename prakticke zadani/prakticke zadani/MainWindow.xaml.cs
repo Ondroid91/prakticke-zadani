@@ -26,7 +26,7 @@ namespace prakticke_zadani
         {
             cars.Clear();
             summary.Clear();
-            filepath.Text = "path : ";
+            filepath.Text = "Načtený soubor : ";
             RefreshDataGrids();
         }
 
@@ -39,14 +39,13 @@ namespace prakticke_zadani
 
             if (success == true)
             {
-                filepath.Text = "path : " + ofd.FileName;
+                filepath.Text = "Načtený soubor : " + ofd.FileName;
                 XDocument document =  XDocument.Load(ofd.FileName);
                 cars = _CarService.GetCarsFromXml(document);
                 summary = _CarService.GetCarSummary(cars);
                 CarTable.ItemsSource = cars;
                 CarSumTable.ItemsSource = summary;
             }
-
         }
 
         private void Export_btn_Click(object sender, RoutedEventArgs e)
@@ -64,8 +63,6 @@ namespace prakticke_zadani
             {
                 document.Save(sfd.FileName);
             }
-
-
         }
 
         private void AddCar_btn_Click(object sender, RoutedEventArgs e)

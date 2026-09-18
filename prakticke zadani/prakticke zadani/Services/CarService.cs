@@ -75,10 +75,5 @@ namespace prakticke_zadani.Services
         {
             cars.Add(car);
         }
-
-        public void EditCar(List<Car> cars, int index, Car car)
-        {
-            cars[index] = car;
-        }
     }
 }

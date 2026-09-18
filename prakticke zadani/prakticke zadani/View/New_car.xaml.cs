@@ -82,7 +82,6 @@ namespace prakticke_zadani.View
             _CarService.AddCar(_cars, newCar);
             _mainWindow.RefreshDataGrids();
             Close();
-
         }
 
         private void SendMessage(string message)

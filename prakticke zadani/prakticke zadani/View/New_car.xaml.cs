@@ -10,12 +10,14 @@ namespace prakticke_zadani.View
     {
         private readonly ICarService _CarService;
         private List<Car> _cars;
+        private MainWindow _mainWindow;
 
-        public New_car(List<Car> cars)
+        public New_car(List<Car> cars, MainWindow mainWindow)
         {
             InitializeComponent();
             _CarService = new CarService();
             _cars = cars;
+            _mainWindow = mainWindow;
         }
 
         private void Create_btn_Click(object sender, RoutedEventArgs e)
@@ -78,13 +80,14 @@ namespace prakticke_zadani.View
             }
 
             _CarService.AddCar(_cars, newCar);
+            _mainWindow.RefreshDataGrids();
             Close();
 
         }
 
         private void SendMessage(string message)
         {
-            View.warning window = new View.warning(message);
+            View.warningMsg window = new View.warningMsg(message);
             window.ShowDialog();
         }
 

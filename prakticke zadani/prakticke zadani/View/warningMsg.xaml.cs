@@ -15,9 +15,9 @@ namespace prakticke_zadani.View
     /// <summary>
     /// Interaction logic for warning.xaml
     /// </summary>
-    public partial class warning : Window
+    public partial class warningMsg : Window
     {
-        public warning(String msg)
+        public warningMsg(String msg)
         {
             InitializeComponent();
             textBox.Text = msg;

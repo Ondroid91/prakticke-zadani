@@ -5,7 +5,7 @@
     <Compile Update="View\New_car.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\warning.xaml.cs">
+    <Compile Update="View\warningMsg.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

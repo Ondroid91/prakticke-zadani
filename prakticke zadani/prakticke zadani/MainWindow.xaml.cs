@@ -1,7 +1,10 @@
 ﻿using Microsoft.Win32;
 using prakticke_zadani.Interfaces;
+using prakticke_zadani.Models;
 using prakticke_zadani.Services;
+using System.Security.Cryptography;
 using System.Windows;
+using System.Windows.Controls;
 using System.Xml.Linq;
 
 namespace prakticke_zadani
@@ -10,12 +13,21 @@ namespace prakticke_zadani
     {
         private readonly ICarService _CarService;
         List<Car> cars = new List<Car>();
+        List<CarSummary> summary = new List<CarSummary>();
 
 
         public MainWindow()
         {
             InitializeComponent();
             _CarService = new CarService();
+        }
+
+        private void Unload_btn_Click(object sender, RoutedEventArgs e)
+        {
+            cars.Clear();
+            summary.Clear();
+            filepath.Text = "path : ";
+            RefreshDataGrids();
         }
 
         private void Load_btn_Click(object sender, RoutedEventArgs e)
@@ -27,11 +39,12 @@ namespace prakticke_zadani
 
             if (success == true)
             {
-                filepath.Text = ofd.FileName;
+                filepath.Text = "path : " + ofd.FileName;
                 XDocument document =  XDocument.Load(ofd.FileName);
-                cars = _CarService.GetCarFromXml(document);
-
-                autobox.Text = cars.Count().ToString();
+                cars = _CarService.GetCarsFromXml(document);
+                summary = _CarService.GetCarSummary(cars);
+                CarTable.ItemsSource = cars;
+                CarSumTable.ItemsSource = summary;
             }
 
         }
@@ -57,8 +70,27 @@ namespace prakticke_zadani
 
         private void AddCar_btn_Click(object sender, RoutedEventArgs e)
         {
-            View.New_car window = new View.New_car(cars);
+            View.New_car window = new View.New_car(cars, this);
             window.ShowDialog();
         }
+
+        private void DeleteCar_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            Car car = (Car)button.DataContext;
+
+            cars.Remove(car);
+            RefreshDataGrids();
+        }
+
+        public void RefreshDataGrids()
+        {
+            CarTable.ItemsSource = null;
+            CarTable.ItemsSource = cars;
+            summary = _CarService.GetCarSummary(cars);
+            CarSumTable.ItemsSource = null;
+            CarSumTable.ItemsSource = summary;
+        }
+
     }
 }

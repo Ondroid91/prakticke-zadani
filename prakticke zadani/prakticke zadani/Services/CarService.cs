@@ -1,11 +1,13 @@
 ﻿using prakticke_zadani.Interfaces;
+using prakticke_zadani.Models;
+using System.Windows.Controls;
 using System.Xml.Linq;
 
 namespace prakticke_zadani.Services
 {
     public class CarService : ICarService
     {
-        public List<Car> GetCarFromXml(XDocument document)
+        public List<Car> GetCarsFromXml(XDocument document)
         {
             List<Car> cars = new List<Car>();
 
@@ -45,14 +47,33 @@ namespace prakticke_zadani.Services
             return document;
         }
 
+        public List<CarSummary> GetCarSummary(List<Car> cars)
+        {
+            List<CarSummary> summary = new List<CarSummary>();
+
+
+            var weekendCars = cars.Where(car =>
+                car.Date.DayOfWeek == DayOfWeek.Saturday ||
+                car.Date.DayOfWeek == DayOfWeek.Sunday);
+
+            var modelCars = weekendCars.GroupBy(car => car.Model);
+
+            foreach (var group in modelCars)
+            {
+                CarSummary carSummary = new CarSummary();
+
+                carSummary.Model = group.Key;
+                carSummary.PriceWithoutDph = group.Sum(car => car.Price);
+                carSummary.PriceWithDph = group.Sum(car =>car.Price * (1 + car.Dph / 100));
+                summary.Add(carSummary);
+            }
+
+            return summary;
+        }
+
         public void AddCar(List<Car> cars, Car car)
         {
             cars.Add(car);
-        }
-
-        public void DeleteCar(List<Car> cars, int index)
-        {
-            cars.RemoveAt(index);
         }
 
         public void EditCar(List<Car> cars, int index, Car car)

@@ -1,13 +1,17 @@
-﻿using System.Xml.Linq;
+﻿using prakticke_zadani.Models;
+using System.Windows.Controls;
+using System.Xml.Linq;
 
 namespace prakticke_zadani.Interfaces
 {
     public interface ICarService
     {
-        List<Car> GetCarFromXml(XDocument document);
+        List<Car> GetCarsFromXml(XDocument document);
         XDocument CreateXmlFromCars(List<Car> Cars);
+
+        List<CarSummary> GetCarSummary(List<Car> cars);
         void AddCar(List<Car> cars, Car car);
-        void DeleteCar(List<Car> cars, int index);
+
         void EditCar(List<Car> cars, int index, Car car);
 
     }

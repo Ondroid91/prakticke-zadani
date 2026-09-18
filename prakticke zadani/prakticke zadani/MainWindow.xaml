@@ -9,15 +9,69 @@
     <Grid>
         <Label Content="Auta" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" Width="310" HorizontalContentAlignment="Center" FontSize="30"/>
 
+        <DataGrid x:Name="CarSumTable"
+          Margin="80,100,480,100"
+          AutoGenerateColumns="False"
+          IsReadOnly="True">
 
-        <TextBlock Name="filepath" HorizontalAlignment="Center" Margin="0,344,0,0" TextWrapping="Wrap" Text="path" VerticalAlignment="Top" Width="400"/>
-        <Button Name="Load_btn" Content="Načíst soubor" HorizontalAlignment="Left" Margin="300,374,0,0" VerticalAlignment="Top" Click="Load_btn_Click"/>
-        <Button Name="AddCar_btn" Content="Přidat auto" HorizontalAlignment="Left" Margin="478,374,0,0" VerticalAlignment="Top" Click="AddCar_btn_Click"/>
-        <Button Name="Export_btn" Content="Exportovat" HorizontalAlignment="Left" Margin="400,374,0,0" VerticalAlignment="Top" Click="Export_btn_Click"/>
-        
-        <TextBlock Name="autobox"  HorizontalAlignment="Left" Margin="200,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Height="170" Width="355"/>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.Header>
+                        <StackPanel>
+                            <TextBlock Text="Název modelu"/>
+                            <TextBlock Text="Cena bez DPH"/>
+                        </StackPanel>
+                    </DataGridTemplateColumn.Header>
 
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Model}"/>
+                                <TextBlock Text="{Binding PriceWithoutDph, StringFormat={}{0:N2} Kč}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
 
+                <DataGridTextColumn Header="Cena s DPH" Binding="{Binding PriceWithDph, StringFormat={}{0:N2} Kč}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid x:Name="CarTable"
+          Margin= "360,100,80,100"
+          AutoGenerateColumns="False"
+          IsReadOnly="True">
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header="Model"
+                            Binding="{Binding Model}"/>
+
+                <DataGridTextColumn Header="Datum"
+                            Binding="{Binding Date}"/>
+
+                <DataGridTextColumn Header="Cena"
+                            Binding="{Binding Price}"/>
+
+                <DataGridTextColumn Header="DPH"
+                            Binding="{Binding Dph}"/>
+
+                <DataGridTemplateColumn Header="">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="Delete" Content="Smazat"
+                            Click="DeleteCar_btn_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <TextBlock Name="filepath" HorizontalAlignment="Center" Margin="0,344,0,0" TextWrapping="Wrap" Text="path : " VerticalAlignment="Top" Width="400"/>
+        <Button Name="Unload_btn" Content="Smazat" HorizontalAlignment="Left" Margin="260,374,0,0" VerticalAlignment="Top" Click="Unload_btn_Click"/>
+        <Button Name="Load_btn" Content="Načíst soubor" HorizontalAlignment="Left" Margin="323,374,0,0" VerticalAlignment="Top" Click="Load_btn_Click"/>
+        <Button Name="AddCar_btn" Content="Přidat auto" HorizontalAlignment="Left" Margin="488,374,0,0" VerticalAlignment="Top" Click="AddCar_btn_Click"/>
+        <Button Name="Export_btn" Content="Exportovat" HorizontalAlignment="Left" Margin="410,374,0,0" VerticalAlignment="Top" Click="Export_btn_Click"/>
 
     </Grid>
 </Window>

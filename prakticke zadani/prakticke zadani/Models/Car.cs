@@ -10,9 +10,5 @@ namespace prakticke_zadani
         public DateOnly Date { get; set; }
         public double Price { get; set; }
         public double Dph { get; set; }
-
-
-
-
     }
 }

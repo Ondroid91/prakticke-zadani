@@ -1,8 +1,4 @@
 ﻿using prakticke_zadani.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Runtime.ConstrainedExecution;
-using System.Text;
 using System.Xml.Linq;
 
 namespace prakticke_zadani.Services

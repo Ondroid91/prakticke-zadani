@@ -1,7 +1,5 @@
 ﻿using prakticke_zadani.Interfaces;
 using prakticke_zadani.Services;
-using prakticke_zadani.View;
-using System.Runtime.Intrinsics.Arm;
 using System.Windows;
 
 namespace prakticke_zadani.View
@@ -49,28 +47,32 @@ namespace prakticke_zadani.View
 
             }
 
-            if (msg != "")
-            {
-                SendMessage(msg);
-                return;
-            }
 
-            if (!double.TryParse(priceText.Text, out double price))
+            if (!double.TryParse(priceText.Text, out double price) && !string.IsNullOrWhiteSpace(priceText.Text))
             {
                 msg += "Cena musí být číslo.\n";
             }
             else
             {
                 newCar.Price = price;
+                if (price < 0)
+                {
+                    msg += "Cena musí být kladná hodnota.\n";
+                }
+
             }
 
-            if (!double.TryParse(priceText.Text, out double dph))
+            if (!double.TryParse(dphText.Text, out double dph) && !string.IsNullOrWhiteSpace(dphText.Text))
             {
                 msg += "DPH musí být číslo.\n";
             }
             else
             {
                 newCar.Dph = dph;
+                if (dph < 0)
+                {
+                    msg += "Dph musí být kladná hodnota.\n";
+                }
             }
 
             if (msg != "")
@@ -90,7 +92,7 @@ namespace prakticke_zadani.View
             window.ShowDialog();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Cancel_btn_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }

@@ -5,25 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:prakticke_zadani"
         mc:Ignorable="d"
-        Title="New_car" Height="400" Width="600">
+        Title="New_car" Height="400" Width="600" MinHeight="400" MinWidth="600">
     <Grid>
 
         <Label Content="Přidat auto" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" Width="310" HorizontalContentAlignment="Center" FontSize="30"/>
-        <Calendar HorizontalAlignment="Left" Margin="400,104,0,0" VerticalAlignment="Top"/>
-        <Label Content="Název modelu :" HorizontalAlignment="Left" Margin="43,107,0,0" VerticalAlignment="Top"/>
-        <Label Content="Cena :" HorizontalAlignment="Left" Margin="43,146,0,0" VerticalAlignment="Top"/>
-        <Label Content="DPH :" HorizontalAlignment="Left" Margin="43,187,0,0" VerticalAlignment="Top"/>
-        <Label Content="Datum prodeje :" HorizontalAlignment="Left" Margin="285,107,0,0" VerticalAlignment="Top"/>
 
-        <TextBox Name="modelText" HorizontalAlignment="Left" Margin="148,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="priceText" HorizontalAlignment="Left" Margin="148,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="dphText" HorizontalAlignment="Left" Margin="148,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Calendar Name="dateCalendar" HorizontalAlignment="Left" Margin="400,104,0,0" VerticalAlignment="Top"/>
+        <Grid Margin="90">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Content="Název modelu :" Margin="5"/>
+                <TextBox Grid.Row="0" Name="modelText" Margin="120,5,5,5"/>
+
+                <Label Grid.Row="1" Content="Cena :" Margin="5"/>
+                <TextBox Grid.Row="1" Name="priceText" Margin="120,5,5,5"/>
+
+                <Label Grid.Row="2" Content="DPH :" Margin="5"/>
+                <TextBox Grid.Row="2" Name="dphText" Margin="120,5,5,5"/>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <Label Content="Datum prodeje :" HorizontalAlignment="Center"/>
+                <Calendar Name="dateCalendar" HorizontalAlignment="Center" Margin="0,30,0,0"/>
+            </Grid>
+
+        </Grid>
 
 
-
-        <Button Name="Create_btn"  Content="Vytvořit" HorizontalAlignment="Left" Margin="320,304,0,0" VerticalAlignment="Top" Click="Create_btn_Click"/>
-        <Button Content="Zrušit" HorizontalAlignment="Left" Margin="245,304,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-
+        <Grid Margin="20,320,20,0" VerticalAlignment="Bottom" Height="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Name="Cancel_btn" Content="Zrušit" Margin="10" Click="Cancel_btn_Click"/>
+            <Button Grid.Column="1" Name="Create_btn" Content="Vytvořit" Margin="10" Click="Create_btn_Click"/>
+        </Grid>
     </Grid>
 </Window>

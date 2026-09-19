@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:prakticke_zadani"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" MinHeight="300" MinWidth="700">
     <Grid>
         <Label Content="Auta" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" Width="310" HorizontalContentAlignment="Center" FontSize="30"/>
+        <Label Content="Celková cena vozů prodaných o víkendu :" HorizontalAlignment="Left" Margin="80,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="Všechna vozidla :" HorizontalAlignment="Left" Margin="400,94,0,0" VerticalAlignment="Top"/>
 
         <DataGrid x:Name="CarSumTable"
-          Margin="80,100,480,100"
+          Margin="80,125,480,75"
           AutoGenerateColumns="False"
           IsReadOnly="True">
 
@@ -38,7 +40,7 @@
         </DataGrid>
 
         <DataGrid x:Name="CarTable"
-          Margin= "360,100,80,100"
+          Margin= "400,125,80,75"
           AutoGenerateColumns="False"
           IsReadOnly="True">
 
@@ -67,11 +69,18 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <TextBlock Name="filepath" HorizontalAlignment="Center" Margin="0,344,0,0" TextWrapping="Wrap" Text="Načtený soubor : " VerticalAlignment="Top" Width="400"/>
-        <Button Name="Unload_btn" Content="Smazat" HorizontalAlignment="Left" Margin="260,374,0,0" VerticalAlignment="Top" Click="Unload_btn_Click"/>
-        <Button Name="Load_btn" Content="Načíst soubor" HorizontalAlignment="Left" Margin="323,374,0,0" VerticalAlignment="Top" Click="Load_btn_Click"/>
-        <Button Name="AddCar_btn" Content="Přidat auto" HorizontalAlignment="Left" Margin="488,374,0,0" VerticalAlignment="Top" Click="AddCar_btn_Click"/>
-        <Button Name="Export_btn" Content="Exportovat" HorizontalAlignment="Left" Margin="410,374,0,0" VerticalAlignment="Top" Click="Export_btn_Click"/>
+        <Grid Margin="20,10,20,10" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
+            <Button Grid.Column="0" Name="Unload_btn" Content="Smazat vše" Margin="5" Click="Unload_btn_Click"/>
+            <Button Grid.Column="1" Name="Load_btn" Content="Načíst soubor" Margin="5" Click="Load_btn_Click"/>
+            <Button Grid.Column="2" Name="Export_btn" Content="Exportovat" Margin="5" Click="Export_btn_Click"/>
+            <Button Grid.Column="3" Name="AddCar_btn" Content="Přidat auto" Margin="5" Click="AddCar_btn_Click"/>
+        </Grid>
     </Grid>
 </Window>

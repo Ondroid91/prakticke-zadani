@@ -2,7 +2,6 @@
 using prakticke_zadani.Interfaces;
 using prakticke_zadani.Models;
 using prakticke_zadani.Services;
-using System.Security.Cryptography;
 using System.Windows;
 using System.Windows.Controls;
 using System.Xml.Linq;
@@ -26,7 +25,6 @@ namespace prakticke_zadani
         {
             cars.Clear();
             summary.Clear();
-            filepath.Text = "Načtený soubor : ";
             RefreshDataGrids();
         }
 
@@ -39,7 +37,6 @@ namespace prakticke_zadani
 
             if (success == true)
             {
-                filepath.Text = "Načtený soubor : " + ofd.FileName;
                 XDocument document =  XDocument.Load(ofd.FileName);
                 cars = _CarService.GetCarsFromXml(document);
                 summary = _CarService.GetCarSummary(cars);
@@ -51,9 +48,8 @@ namespace prakticke_zadani
         private void Export_btn_Click(object sender, RoutedEventArgs e)
         {
             XDocument document = _CarService.CreateXmlFromCars(cars);
-
-
             SaveFileDialog sfd = new SaveFileDialog();
+
             sfd.Filter = "XML Files | *.xml";
             sfd.DefaultExt = ".xml";
 

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9C82F8C2-8A48-0C20-E866-39F340C1D8BA}|prakticke zadani\\prakticke zadani.csproj|c:\\users\\ondra\\onedrive\\dokumenty\\github\\prakticke zadani\\prakticke zadani\\prakticke zadani\\view\\new_car.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9C82F8C2-8A48-0C20-E866-39F340C1D8BA}|prakticke zadani\\prakticke zadani.csproj|solutionrelative:prakticke zadani\\view\\new_car.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9C82F8C2-8A48-0C20-E866-39F340C1D8BA}|prakticke zadani\\prakticke zadani.csproj|c:\\users\\ondra\\onedrive\\dokumenty\\github\\prakticke zadani\\prakticke zadani\\prakticke zadani\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9C82F8C2-8A48-0C20-E866-39F340C1D8BA}|prakticke zadani\\prakticke zadani.csproj|solutionrelative:prakticke zadani\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -35,6 +39,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "New_car.xaml",
+              "DocumentMoniker": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\View\\New_car.xaml",
+              "RelativeDocumentMoniker": "prakticke zadani\\View\\New_car.xaml",
+              "ToolTip": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\View\\New_car.xaml",
+              "RelativeToolTip": "prakticke zadani\\View\\New_car.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-19T09:58:31.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\MainWindow.xaml",
               "RelativeDocumentMoniker": "prakticke zadani\\MainWindow.xaml",
@@ -46,52 +62,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "New_car.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\View\\New_car.xaml.cs",
-              "RelativeDocumentMoniker": "prakticke zadani\\View\\New_car.xaml.cs",
-              "ToolTip": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\View\\New_car.xaml.cs",
-              "RelativeToolTip": "prakticke zadani\\View\\New_car.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-18T20:46:29.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "prakticke zadani\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\MainWindow.xaml.cs",
               "RelativeToolTip": "prakticke zadani\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-18T10:53:54.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "New_car.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\View\\New_car.xaml.cs",
+              "RelativeDocumentMoniker": "prakticke zadani\\View\\New_car.xaml.cs",
+              "ToolTip": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\View\\New_car.xaml.cs",
+              "RelativeToolTip": "prakticke zadani\\View\\New_car.xaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwGAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-18T20:46:29.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CarService.cs",
               "DocumentMoniker": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\Services\\CarService.cs",
               "RelativeDocumentMoniker": "prakticke zadani\\Services\\CarService.cs",
               "ToolTip": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\Services\\CarService.cs",
               "RelativeToolTip": "prakticke zadani\\Services\\CarService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwEsAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-18T14:00:50.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ICarService.cs",
               "DocumentMoniker": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\Interfaces\\ICarService.cs",
               "RelativeDocumentMoniker": "prakticke zadani\\Interfaces\\ICarService.cs",
               "ToolTip": "C:\\Users\\ondra\\OneDrive\\Dokumenty\\GitHub\\prakticke zadani\\prakticke zadani\\prakticke zadani\\Interfaces\\ICarService.cs",
               "RelativeToolTip": "prakticke zadani\\Interfaces\\ICarService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-18T13:52:30.533Z",
               "EditorCaption": ""

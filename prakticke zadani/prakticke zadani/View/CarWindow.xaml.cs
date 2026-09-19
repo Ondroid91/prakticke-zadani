@@ -4,13 +4,13 @@ using System.Windows;
 
 namespace prakticke_zadani.View
 {
-    public partial class New_car : Window
+    public partial class CarWindow : Window
     {
         private readonly ICarService _CarService;
         private List<Car> _cars;
         private MainWindow _mainWindow;
 
-        public New_car(List<Car> cars, MainWindow mainWindow)
+        public CarWindow(List<Car> cars, MainWindow mainWindow)
         {
             InitializeComponent();
             _CarService = new CarService();

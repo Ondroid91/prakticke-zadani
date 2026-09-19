@@ -63,7 +63,7 @@ namespace prakticke_zadani
 
         private void AddCar_btn_Click(object sender, RoutedEventArgs e)
         {
-            View.New_car window = new View.New_car(cars, this);
+            View.CarWindow window = new View.CarWindow(cars, this);
             window.ShowDialog();
         }
 

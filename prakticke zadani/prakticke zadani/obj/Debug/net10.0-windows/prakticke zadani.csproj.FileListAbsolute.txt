@@ -20,7 +20,7 @@ C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakt
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\prakticke zadani.genruntimeconfig.cache
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\ref\prakticke zadani.dll
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\praktick.CD815A10.Up2Date
-C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\View\New_car.g.cs
-C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\View\New_car.baml
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\View\warningMsg.g.cs
 C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\View\warningMsg.baml
+C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\View\CarWindow.g.cs
+C:\Users\ondra\OneDrive\Dokumenty\GitHub\prakticke zadani\prakticke zadani\prakticke zadani\obj\Debug\net10.0-windows\View\CarWindow.baml

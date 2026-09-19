@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:prakticke_zadani.View"
         mc:Ignorable="d"
-        Title="warning" Height="220" Width="300">
+        Title="warning" Height="250" Width="300" MinHeight="250" MinWidth="300">
     <Grid>
         <TextBox Name="textBox" HorizontalAlignment="Center" Margin="0,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260" Height="125"/>
-        <Button Name="Close_btn" Content="Zavřít" HorizontalAlignment="Center" Margin="0,154,0,0" VerticalAlignment="Top" Click="Close_btn_Click"/>
+        <Button Name="Close_btn" Content="Zavřít" HorizontalAlignment="Center" Margin="0,154,0,20" VerticalAlignment="Bottom" Click="Close_btn_Click"/>
 
     </Grid>
 </Window>
